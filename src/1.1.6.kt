@@ -1,20 +1,20 @@
-fun arthoper(a: Double, b: Double, c: Double, oper: Char): Double {
-    return when (oper) {
-        '+' -> a + b + c
-        '-' -> a - b - c
-        '*' -> a * b * c
-        '/' -> a / b / c
-        else -> throw IllegalArgumentException("Invalid operator")
+fun mpg(a: Int, b: Int, c: Int, operation: String): Int {
+    return when (operation) {
+        "addition" -> a + b + c
+        "subtraction" -> a - b - c
+        "multiplication" -> a * b * c
+        "division" -> b / a
+        else -> throw IllegalArgumentException("Invalid operation type.")
     }
 }
 
 fun main() {
-    val a = 111.0
-    val b = 2222.0
-    val c = -222.0
+    val num1 = 111
+    val num2 = 2222
+    val num3 = -222
 
-    println("Addition: ${arthoper(a, b, c, '+')}")
-    println("Subtraction: ${arthoper(a, b, c, '-')}")
-    println("Multiplication: ${arthoper(a, b, c, '*')}")
-    println("Division: ${arthoper(a, b, c, '/')}")
+    println("Addition of $num1, $num2, $num3 is ${mpg(num1, num2, num3, "addition")}")
+    println("Subtraction of $num1, $num2, $num3 is ${mpg(num1, num2, num3, "subtraction")}")
+    println("Multiplication of $num1, $num2, $num3 is ${mpg(num1, num2, num3, "multiplication")}")
+    println("Division of $num2, $num1,  is ${mpg(num1, num2, num3, "division")}")
 }
