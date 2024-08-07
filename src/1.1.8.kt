@@ -27,6 +27,14 @@ fun main() {
     println("using array-6 by using arrayof()")
     println(numbers5.contentDeepToString())
 
+    fun main() {
+        val numbers6 = intArrayOf(56, 23, 49, 12, 2)
+        for (i in numbers6.indices) {
+            println("a[$i] = ${numbers6[i]}")
+        }
+    }
+
+
 
 
 
