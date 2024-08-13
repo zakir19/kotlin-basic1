@@ -32,12 +32,30 @@ fun main() {
         for (i in numbers6.indices) {
             println("a[$i] = ${numbers6[i]}")
         }
+
     }
 
+    print("*********************")
 
 
+    val numbers7 = intArrayOf(56, 23, 49, 12, 2)
+    for (i in numbers7.indices) {
+        println("a[$i] = ${numbers7[i]}")
+    }
+    println("Array elements: ${numbers7.joinToString(", ")}")
 
+    print("********************without using built in function ")
 
-
+    val numbers8 = IntArray(5)
+    numbers8[0] = 56
+    numbers8[1] = 23
+    numbers8[2] = 49
+    numbers8[3] = 12
+    numbers8[4] = 2
+    for (i in numbers8.indices) {
+        println("a[$i] = ${numbers8[i]}")
+    }
+    println("Array elements: ${numbers8.joinToString(", ")}")
 
 }
+
